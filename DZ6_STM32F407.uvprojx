@@ -10,6 +10,7 @@
       <TargetName>STM32F407</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -185,7 +186,6 @@
             <RvdsVP>2</RvdsVP>
             <RvdsMve>0</RvdsMve>
             <RvdsCdeCp>0</RvdsCdeCp>
-            <nBranchProt>0</nBranchProt>
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -388,6 +388,31 @@
               <FileType>1</FileType>
               <FilePath>.\app\app.c</FilePath>
             </File>
+            <File>
+              <FileName>Task1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\Task1.c</FilePath>
+            </File>
+            <File>
+              <FileName>RCC_F407.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\RCC_F407.c</FilePath>
+            </File>
+            <File>
+              <FileName>GPIO_F407.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\GPIO_F407.c</FilePath>
+            </File>
+            <File>
+              <FileName>Task2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\Task2.c</FilePath>
+            </File>
+            <File>
+              <FileName>Task3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\Task3.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -397,6 +422,36 @@
               <FileName>app.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\inc\app.h</FilePath>
+            </File>
+            <File>
+              <FileName>Task1.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\Task1.h</FilePath>
+            </File>
+            <File>
+              <FileName>RCC_F407.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\RCC_F407.h</FilePath>
+            </File>
+            <File>
+              <FileName>GPIO_F407.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\GPIO_F407.h</FilePath>
+            </File>
+            <File>
+              <FileName>Task2.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\Task2.h</FilePath>
+            </File>
+            <File>
+              <FileName>Task3.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\Task3.h</FilePath>
+            </File>
+            <File>
+              <FileName>TaskSwitch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\TaskSwitch.h</FilePath>
             </File>
           </Files>
         </Group>

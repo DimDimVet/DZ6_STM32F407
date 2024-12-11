@@ -1,11 +1,13 @@
 #include "app.h"
 
+#define TASK 2//1,2,3,4,5
+
 int main()
 {
 
 #if TASK==1
 
-    EXE_TASK1(1000);
+    EXE_TASK1();
 
     while (1)
     {
@@ -16,19 +18,10 @@ int main()
 #elif TASK==2
 
     EXE_TASK2(8000,500);
-
+		
     while (1)
     {
         LED_Activ_TIM();
-    }
-#elif TASK==3
-
-    EXE_TASK3(8000);
-
-    while (1)
-    {
-        LED_Activ_TIM();
-				delay(3000);
     }
 
 #endif
