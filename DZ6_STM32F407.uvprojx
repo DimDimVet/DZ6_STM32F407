@@ -413,6 +413,16 @@
               <FileType>1</FileType>
               <FilePath>.\app\Task3.c</FilePath>
             </File>
+            <File>
+              <FileName>Task4.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\Task4.c</FilePath>
+            </File>
+            <File>
+              <FileName>Task5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\Task5.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -452,6 +462,16 @@
               <FileName>TaskSwitch.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\inc\TaskSwitch.h</FilePath>
+            </File>
+            <File>
+              <FileName>Task4.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\Task4.h</FilePath>
+            </File>
+            <File>
+              <FileName>Task5.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\inc\Task5.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -21,6 +21,7 @@ int main()
     {
         LED_Activ_TIM();
     }
+
 #elif TASK==3
 
     EXE_TASK3(8000);
@@ -28,9 +29,27 @@ int main()
     while (1)
     {
         LED_Activ_TIM();
-				delay(3000);
+        delay(3000);
     }
 
+#elif TASK==4
+
+    EXE_TASK4();
+
+    while (1)
+    {
+        
+    }
+
+#elif TASK==5
+
+    EXE_TASK5(8000);
+
+    while (1)
+    {
+        LED_Activ_TIM();
+        delay(3000);
+    }
 #endif
 
 }

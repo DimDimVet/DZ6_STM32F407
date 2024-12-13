@@ -3,8 +3,22 @@
 void GPIO_Init()
 {
     OutPin();
+		InPin();
 }
 
+//In
+void InPin()
+{
+    KeyConfigInPin();
+}
+
+//Key0 PE4 3pin
+//Key1 PE3 2pin
+void KeyConfigInPin()
+{
+	GPIOE->MODER &= ~ (GPIO_MODER_MODER3|GPIO_MODER_MODER4); // сброс режима входа-выхода 
+	GPIOE->PUPDR |= (GPIO_PUPDR_PUPD3_0|GPIO_PUPDR_PUPD4_0); // установка подтяжки к 0 
+}
 //Out
 void OutPin()
 {
@@ -32,6 +46,13 @@ void AFRH_GPIOA(int resetBit,int setBit, int AFx, int PAx)
     GPIOA->MODER &= ~resetBit;//сброс
     GPIOA->MODER |= setBit;//установка
     GPIOA->AFR[1] |= (AFx << ((PAx-8) * 4));//выбор функции
+}
+
+void AFRL_GPIOA(int resetBit,int setBit, int AFx, int PAx)
+{
+    GPIOA->MODER &= ~resetBit;//сброс
+    GPIOA->MODER |= setBit;//установка
+    GPIOA->AFR[0] |= (AFx << (PAx * 4));//выбор функции
 }
 
 void AFRL_GPIOB(int resetBit,int setBit, int AFx, int PBx)
